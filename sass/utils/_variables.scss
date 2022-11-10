@@ -1,0 +1,45 @@
+:root {
+    --accent-font: 'Roboto', sans-serif;
+    --second-font: 'Raleway', sans-serif;
+
+    --accent-text-color: #212121;
+    --second-text-color: #757575;
+    --third-text-color: #FFFFFF;
+    --fourth-text-color: #2196F3;
+    --fifth-text-color: rgba(255, 255, 255, 0.6);
+
+    --accent-background: #FFFFFF;
+    --second-background: #2F303A;
+    --third-background: #2196F3;
+    --fourth-background: #000000;
+    --fifth-background: #F5F4FA;
+    --sixth-background: #188CE8;
+    --seventh-background: rgba(0, 0, 0, 0.2);
+    --eighth-background: rgba(255, 255, 255, 0.1);
+    --ninth-background: #C4C4C4(47, 48, 58, 0.4);
+    --tenth-background: rgba(33, 150, 243, 0.9);
+    --eleventh-background: rgba(47, 48, 58, 0.8);
+
+    --accent-color: #EEEEEE;
+    --second-color: #FFFFFF;
+    --third-color: #2196F3;
+    --fourth-color: #000000;
+    --fifth-color: #AFB1B8;
+
+    --accent-border-color: #212121;
+    --second-border-color: #2196F3;
+    --third-border-color: rgba(0, 0, 0, 0.1);
+    --fourth-border-color: rgba(33, 33, 33, 0.2);
+    --fifth-border-color: rgba(255, 255, 255, 0.3);
+    --sixth-border-color: #EEEEEE;
+    --seven-border-color: #AFB1B8;
+
+    --accent-fill: #2196F3;
+    --second-fill: #AFB1B8;
+    --third-fill: #FFFFFF;
+
+    --accent-placeholder: rgba(117, 117, 117, 0.5);
+    --second-placeholder: rgba(255, 255, 255, 0.6);
+
+    --transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

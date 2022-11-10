@@ -1,0 +1,36 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    background-color: var(--accent-background);
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    @extend %align;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--accent-background);
+    border: 1px solid  var(--third-border-color);
+    padding: 0;
+    transition: fill var(--transition-duration-and-func);
+}
+
+.modal-close-btn-icon {
+    transition: fill var(--transition-duration-and-func);
+
+    .modal-close-btn:hover &,
+    .modal-close-btn:focus & {
+        fill: var(--accent-fill);
+    }
+}

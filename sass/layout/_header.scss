@@ -1,0 +1,115 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logotype {
+    font-family: var(--second-font);
+    
+    @include font (700, 26px, 31px);
+    
+    letter-spacing: 0.03em;
+    color: var(--fourth-text-color);
+    margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    
+}
+
+.logotype__header {
+    color: var(--accent-text-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu__link {
+    position: relative;
+    display: block;
+
+    @include font (500, 14px, 16px);
+    
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
+    list-style: none;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    transition: color var(--transition-duration-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--fourth-text-color);
+    }
+
+    &.current {
+        color: var(--fourth-text-color);
+    }
+}
+
+.current {
+    display: block;
+    color: var(--third-color);
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--third-background);
+        border-radius: 2px;
+        left: 0;
+        bottom: -1px;
+    }
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contact__menu:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact__list {
+    font-style: normal;
+
+    @include font (500, 14px, 16px);
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    transition: color var(--transition-duration-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--fourth-text-color);
+    }
+}
+
+.contact__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}

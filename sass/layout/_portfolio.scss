@@ -1,0 +1,109 @@
+.buttons {
+    @extend %align;
+    
+    margin-bottom: 50px;
+}
+
+.attachment:not(:last-child) {
+    margin-right: 8px;
+}
+
+
+.attachment__btn {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    @include font (500, 16px, 26px);
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--fifth-background);
+    border-radius: 4px;
+    border: none;
+    transition: color var(--transition-duration-and-func), background-color var(--transition-duration-and-func), box-shadow var(--transition-duration-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--third-text-color);
+        background-color: var(--third-background);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    transform: translate(0, 100%);
+    transition: transform var(--transition-duration-and-func);
+    
+    @include font (400, 18px, 28px);
+    
+    letter-spacing: 0.02em;
+    color: var(--third-text-color);
+    background-color: var(--tenth-background);
+    width: 100%;
+    height: 100%;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    .portfolio__link:hover &,
+    .portfolio__link:focus & {
+        transform: translate(0, 0);
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio__cards {
+    flex-basis: calc((100% - 60px) / 3);
+    transition: box-shadow var(--transition-duration-and-func);
+
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.portfolio__link {
+    display: block;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.subscription {
+    border: 1px solid var(--sixth-border-color);
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.subscription__title {
+    @include font (700, 18px, 36px);
+    
+    letter-spacing: 0.06em;
+    color: var(--accent-text-color);
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.subscription__paragraph {
+    @include font (400, 16px, 30px);
+    
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+    text-decoration: none;
+}

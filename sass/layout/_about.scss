@@ -1,0 +1,35 @@
+.about-title {
+    display: none;
+}
+
+.about-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-list-container {
+    @extend %align;
+    
+    width: 270px;
+    height: 120px;
+    background-color: var(--fifth-background);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.about-title-item {
+    @include font (700, 14px, 16px);
+    
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+    margin-bottom: 10px;
+}
+
+.about-paragraph {
+    @include font (400, 14px, 24px);
+    
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}

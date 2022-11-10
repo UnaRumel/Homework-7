@@ -1,0 +1,29 @@
+@import './utils/_variables.scss';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './base/_common.scss';
+@import './base/_section.scss';
+@import './base/_container.scss';
+
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/work';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+
+@import './layout/portfolio';
+
+
+
+
+
+
+

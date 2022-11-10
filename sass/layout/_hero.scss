@@ -1,0 +1,55 @@
+.hero {
+    padding: 200px 0;
+    text-align: center;
+}
+
+.background {
+    background-image: linear-gradient(rgba(47,
+                48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bg.jpg');
+    background-color: var(--ninth-background);
+    background-size: cover;
+    background-position: border-box;
+}
+
+.hero-title {
+    @include font (900, 44px, 60px);
+    
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--third-text-color);
+    margin-bottom: 30px;
+}
+
+.modal-btn-container {
+    padding-top: 30px;
+    padding-bottom: 200px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.modal-btn {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @include font (700, 16px, 30px);
+    
+    @extend %align;
+    
+    letter-spacing: 0.06em;
+    color: var(--third-text-color);
+    background-color: var(--third-background);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--transition-duration-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--sixth-background);
+    }
+}

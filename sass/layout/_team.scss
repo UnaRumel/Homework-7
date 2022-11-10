@@ -1,0 +1,70 @@
+.team-section {
+    background-color: var(--fifth-background);
+}
+
+.menu-team {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.team-cards {
+    background-color: var(--accent-background);
+    flex-basis: calc((100% - 90px)/4);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.team-subscription {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-title {
+    @include font (500, 16px, 19px);
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+    margin-bottom: 10px;
+}
+
+.team-paragraph {
+    @include font (400, 16px, 19px); 
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list-link {
+    @extend %align;
+    
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--fifth-color);
+    background-color: var(--accent-background);
+    border: none;
+    transition: background-color var(--transition-duration-and-func), fill var(--transition-duration-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--third-background);
+    }
+}
+
+.social-list-icon {
+    fill: var(--second-fill);
+
+    .social-list-link:hover &,
+    .social-list-link:focus & {
+        fill: var(--third-fill);
+    }
+}

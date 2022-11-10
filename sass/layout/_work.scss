@@ -1,0 +1,54 @@
+.work-section {
+    padding-top: 0;
+}
+
+.work-container {
+    padding-top: 118px;
+    padding-bottom: 94px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.all-titles {
+    @include font (700, 36px, 42px); 
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+    margin-bottom: 50px;
+}
+
+.work-img-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.work-list {
+    display: block;
+}
+
+.work-list-wrapper {
+    position: relative;
+}
+
+.work-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+
+    @include font (700, 14px, 16px);
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-text-color);
+    background-color: var(--eleventh-background);
+    width: 100%;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: auto;
+    padding-right: auto;
+}

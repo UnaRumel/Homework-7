@@ -30,3 +30,22 @@ button {
 .link {
     text-decoration: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+* {
+  //   outline: 1px solid tomato;
+}

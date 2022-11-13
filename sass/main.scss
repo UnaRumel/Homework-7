@@ -1,10 +1,10 @@
 // Base
-@import "./base/variables";
-@import "./base/mixins";
-@import "./base/utils";
+
+@import "./utils";
 @import "./base/common";
-@import "./base/buttons";
-@import "./base/logotip";
+@import "./base/reset"
+@import "./components/buttons"
+@import "./components/logotip"
 
 //Layouts
 // Header
